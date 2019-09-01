@@ -1,0 +1,20 @@
+purchaseAmount = float(input("Please enter the total amount you spend "))
+shippingFee = 0
+totalAmount = 0
+
+# free shipping condition
+if purchaseAmount >= 50:
+    totalAmount = purchaseAmount + 0
+    print("You have qualified for free shipping. Your total cost will be $" + str(totalAmount))
+
+
+elif purchaseAmount <= 49.99:
+    totalAmount = purchaseAmount + 10
+    print(
+        "Since you don't qualify for free shipping, you'll be charges $10 shipping fee. Your total cost will be, $" + str(
+            totalAmount))
+
+print("Thank you for shopping with us!")
+
+
+
